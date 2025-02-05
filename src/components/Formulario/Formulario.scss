@@ -1,0 +1,68 @@
+.fondo{
+    background-color: rgb(239, 239, 239);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .fondo-form{
+        height: 80%;
+        width: 40%;
+        max-width: 400px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        border-radius: 4px;
+    }
+    .titulo{
+        text-align: center;
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 3%;
+    }
+    .div-form{
+        width: 100%;
+
+        label{
+            font-family: "Inter";
+            font-size: 13px;
+        }
+        .input-form{
+            font-family: "Inter";
+            width: 100%;
+            max-height: 45px;
+            padding: 7px;
+            margin: 1% 0;
+            border-radius: 4px;
+            border-color: rgb(188, 188, 188);
+    
+        }
+        
+    }
+    .ant-btn{
+        width: 100%;
+        height: 45px;
+    }
+    .cardInfor{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        flex-direction: column;
+    }
+    .ant-card{
+        width: 40%;
+        height: 40%;
+    }
+    
+}
