@@ -13,7 +13,7 @@ const CardInfo = ({formData,setShow}) => {
         <p><strong>Phone number: </strong>{formData.number}</p>
         <p><strong>Message: </strong>{formData.message}</p>
       </div>
-      <Button onClick={() => setShow(false)}>
+      <Button color="default" variant="solid" htmlType="submit" onClick={() => setShow(false)}>
         Cerrar
       </Button>
     </Card>
