@@ -11,7 +11,9 @@ const Formulario = () => {
     number: 0,
     message: "",
   });
+
   const [show, setShow] = useState(false);
+
   const validateMessages = {
     required: "${label} is required!",
     types: {
@@ -19,9 +21,17 @@ const Formulario = () => {
     },
   };
 
-  const onFinish = (values) => {
+  const onFinish = async(values) => {
     setDataForm(values);
     setShow(true);
+
+    try {
+      const response = await axios.post('https://metricsalad.com/form', values);
+
+    } catch (error) {
+      console.error('There was a problem with the petition:', error);
+      message.error('There was an error');
+    }
   };
 
   return (
